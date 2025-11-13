@@ -1,94 +1,127 @@
 # Zero Trust Overview
 
-Zero Trust is a security framework built on the principle: **“Never trust, always verify.”**  
-Traditional networks assumed trust based on location (inside the perimeter). Zero Trust eliminates that assumption entirely.
+Zero Trust is a security framework built on the principle **“Never trust, always verify.”**  
+It shifts security from perimeter-based assumptions to continuous identity, device, and risk evaluation across every access request.
 
-This document summarizes the core pillars, concepts, and cloud-security relevance of Zero Trust.
-
----
-
-## What Zero Trust Solves
-Modern environments face:
-- Remote users
-- Cloud-hosted applications
-- Increased identity-based attacks
-- Hybrid environments
-- Lateral movement risk
-
-Zero Trust reduces the blast radius of breaches and ensures every user, device, and request is verified.
+This overview reflects guidance from **NIST SP 800-207**, Microsoft, AWS, and modern cloud-security design.
 
 ---
 
-## Core Principles
+## Why Zero Trust Exists
 
-### 1. Verify Explicitly
-Always authenticate and authorize based on:
-- Identity
-- Device health
+Traditional castle-and-moat security breaks down in modern environments due to:
+- Remote/hybrid workforce
+- Multi-cloud adoption
+- Identity-based attacks
+- Lateral movement threats
+- SaaS & external integrations
+- Increasing insider risk
+
+Zero Trust reduces attack surface by evaluating *every* authentication and authorization event.
+
+---
+
+## Core Principles (Industry Standard)
+
+### **1. Verify Explicitly**
+Continuously validate:
+- User identity
+- Device compliance
 - Location
+- Risk score
 - Data sensitivity
-- Risk signals
 - Real-time context
 
-### 2. Use Least Privilege Access
-- JIT (Just-in-Time) access  
-- JEA (Just Enough Access)  
-- Privileged Identity Management  
-- Role-based & attribute-based access controls  
-- Removal of standing admin privileges  
+### **2. Least Privilege Access**
+- JIT (Just-In-Time)
+- JEA (Just Enough Access)
+- RBAC/ABAC
+- Scoped permissions
+- Removal of standing privileges
 
-### 3. Assume Breach
-Design your environment *as if attackers are already inside*:
+### **3. Assume Breach**
+Operate as if attackers are already present:
 - Micro-segmentation
-- Logging & monitoring
+- Continuous monitoring
 - Lateral movement prevention
-- Strong containment boundaries
+- Containment and isolation controls
 
 ---
 
 ## Zero Trust Pillars (Microsoft Model)
 
-1. **Identity**  
-   The primary control plane — users, service accounts, workloads.
-
-2. **Devices**  
-   Ensure only compliant and secure devices can access resources.
-
-3. **Apps**  
-   Enforce secure access to SaaS, PaaS, and local applications.
-
-4. **Infrastructure**  
-   Secure cloud resources, servers, containers, and workloads.
-
-5. **Network**  
-   Micro-segmentation, least-privilege routing, encrypted traffic.
-
-6. **Data**  
-   Classification, labeling, encryption, access monitoring.
+1. **Identity** – authentication, authorization, lifecycle management  
+2. **Devices** – compliance, health, endpoint security  
+3. **Network** – segmentation, encryption, access control  
+4. **Applications** – SSO, app registration, OAuth governance  
+5. **Infrastructure** – secure configuration, workload protection  
+6. **Data** – classification, labeling, encryption, DLP  
 
 ---
 
-## Why Zero Trust Matters in Cloud Security Roles
+## Standards & Reference Models
 
-- Identity is now the #1 attack vector.
-- Cloud removes the traditional perimeter.
-- Multi-cloud = increased attack surface.
-- FinOps & cost governance rely on controlled, secure access.
-- Cloud governance frameworks (AWS CAF, Azure CAF) assume Zero Trust foundations.
+This Zero Trust approach aligns with:
+
+- **NIST SP 800-207 – Zero Trust Architecture**
+- **Microsoft Zero Trust Framework**
+- **AWS Zero Trust Guiding Principles**
+- **Google BeyondCorp Model**
+
+Referencing these standards signals that the implementation is vendor-neutral and aligned with industry best practices.
+
+---
+
+## Zero Trust as a Journey (Crawl → Walk → Run)
+
+Zero Trust is implemented in stages:
+
+### **Crawl**
+- MFA everywhere  
+- Logging enabled  
+- Basic segmentation  
+- Initial identity cleanup  
+
+### **Walk**
+- Conditional Access  
+- Device compliance enforcement  
+- Privileged Identity Management  
+- DLP policies  
+- Centralized SIEM  
+
+### **Run**
+- Continuous Access Evaluation  
+- Automated remediation (SOAR)  
+- Identity Governance at scale  
+- Advanced segmentation  
+- Data-centric access controls  
+
+---
+
+## Common Zero Trust Use Cases
+
+- Protecting privileged/admin accounts  
+- Securing access to financial or sensitive systems  
+- Reducing lateral movement across workloads  
+- Third-party vendor access  
+- Remote access without VPN reliance  
+- Protecting regulated data (HIPAA, CJIS, PCI, etc.)  
 
 ---
 
 ## How My Background Aligns
-My Navy and federal background maps directly to Zero Trust:
-- Verification of identity (SCIF access)
-- Access control and clearance levels
-- Insider threat prevention
-- Audit and compliance mindset
-- Risk mitigation and incident response
-- Enforcing least privilege through DoD directives
+
+My Navy, Federal, and Aerospace experience maps directly to Zero Trust:
+- Identity vetting (SCIF, clearance, background checks)
+- Access control across secure facilities
+- Enforcing least privilege & separation of duties
+- Incident response & risk mitigation
+- Compliance with strict federal standards
+- Operational security (OPSEC) & insider threat awareness
 
 ---
 
 ## Summary
-Zero Trust is the security backbone of all modern cloud environments.  
-This folder contains my working knowledge, checklists, and architecture guides that reflect how I apply Zero Trust principles to cloud environments.
+
+Zero Trust is the foundation of modern cloud security.  
+This overview serves as the conceptual backbone for architecture, governance, IAM, and real-world cloud security practices documented in this repo.
