@@ -1,37 +1,51 @@
 # Cloud Tooling Overview
 
-Tools and platforms I use across cloud, security, analytics, and FinOps.
+A list of the platforms, services, and tools I use or study across cloud security, FinOps, analytics, and governance.
+
+---
 
 ## Cloud Platforms
-- AWS (primary)
-- Azure (security + identity)
-- GCP (finops + analytics exposure)
+- AWS (Cost Explorer, Budgets, IAM, EC2, S3)
+- Azure (Entra ID, Security Center, Cost Management)
+- GCP (Analytics & cost governance exposure)
+
+---
 
 ## Security Tools
-- Azure AD / Entra ID
+- Entra ID / Azure AD
 - IAM (AWS/Azure)
 - MFA, Conditional Access
-- Security Center / Security Hub
-- CIS Benchmarks
-- Defender for Cloud
+- AWS Security Hub / Azure Security Center
+- CIS Benchmarks / NIST frameworks
+- RMF & DoD IA concepts
 
-## FinOps / Cost Tools
+---
+
+## FinOps & Cost Governance Tools
 - AWS Cost Explorer
 - AWS Budgets
+- AWS Pricing Calculator
 - Azure Cost Management
-- Savings Plans + RI calculator
-- Pricing calculators
+- Cost & Usage Reports (CUR)
+- Power BI for cost visualization
+
+---
 
 ## Analytics Tools
-- Power BI (PL-300 track)
-- Excel (trend analysis)
-- AWS Cost & Usage data (CUR)
+- Power BI (dashboards & trend analysis)
+- Excel (Power Query, pivot models)
+- SQL reporting
+- ERP data (SAP, Oracle, Costpoint, NALCOMIS, R-Supply)
+
+---
 
 ## DevOps & Automation Tools
 - GitHub
 - Git
 - VS Code
-- Basic IaC concepts (Terraform/Bicep)
+- Intro to Terraform/Bicep concepts
+
+---
 
 ## Learning Platforms
 - ACI Learning
@@ -39,3 +53,4 @@ Tools and platforms I use across cloud, security, analytics, and FinOps.
 - LinkedIn Learning
 - AWS Skill Builder
 - Microsoft Learn
+
