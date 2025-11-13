@@ -1,76 +1,81 @@
 # Zero Trust Checklist
 
-This is a practical, working checklist used to assess or design a Zero Trust–aligned environment.
+A practical, industry-aligned Zero Trust checklist mapped across identity, devices, networks, applications, data, and infrastructure.  
+This version includes maturity guidance and implementation notes used by real security teams.
 
 ---
 
-## Identity (The New Security Perimeter)
+## Identity (Primary Control Plane)
 
-- [ ] MFA enforced for all users  
-- [ ] Conditional Access and risk-based policies enabled  
-- [ ] No standing admin privileges  
-- [ ] Privileged Identity Management (PIM/JIT) implemented  
-- [ ] Service accounts replaced with managed identities where possible  
-- [ ] Passwordless authentication supported or planned  
-- [ ] Regular access reviews and re-certifications conducted  
-- [ ] Clear separation of duties (SoD) enforced  
+- [ ] MFA enforced for all accounts  
+- [ ] Conditional Access policies in place  
+- [ ] Passwordless supported or planned  
+- [ ] No standing global admin privileges  
+- [ ] Privileged Identity Management (JIT/JEA)  
+- [ ] Access reviews conducted regularly  
+- [ ] Service accounts replaced with managed identities  
+- [ ] Separate admin accounts (no dual-purpose identities)  
+- [ ] Strong session controls & token lifetime settings  
 
 ---
 
 ## Devices
 
-- [ ] Device compliance policies defined  
-- [ ] Unmanaged devices blocked or restricted  
-- [ ] Endpoint protection enforced  
-- [ ] Device posture evaluated for every sign-in  
-- [ ] OS, patching, and security baselines enforced  
+- [ ] Device compliance policies defined (Windows/Linux/macOS)  
+- [ ] Unmanaged devices restricted or blocked  
+- [ ] Endpoint security required (EDR/AV)  
+- [ ] Device health evaluated at sign-in  
+- [ ] OS patching cadence enforced  
+- [ ] Compromised devices trigger Conditional Access blocks  
 
 ---
 
 ## Network
 
 - [ ] Micro-segmentation implemented  
-- [ ] No broad “ANY-ANY” rules  
-- [ ] All traffic encrypted (TLS/IPsec)  
-- [ ] Private endpoints for sensitive resources  
-- [ ] Admin access restricted and monitored  
+- [ ] No ANY-ANY firewall rules  
+- [ ] Private endpoints for sensitive workloads  
+- [ ] Admin access via secure jump hosts/bastions  
+- [ ] All traffic encrypted  
+- [ ] East-West traffic monitored  
 
 ---
 
-## Applications
+## Apps
 
-- [ ] SSO enforced  
-- [ ] App registration governance in place  
-- [ ] OAuth permissions reviewed and restricted  
-- [ ] Shadow IT discovery and control implemented  
-- [ ] App-to-app authentication uses managed identities  
+- [ ] SSO for all SaaS and internal apps  
+- [ ] OAuth permission reviews  
+- [ ] Shadow IT monitoring implemented  
+- [ ] App-to-app authentication via managed identities  
+- [ ] Sensitive apps require step-up authentication  
 
 ---
 
 ## Data
 
-- [ ] Data classification model implemented  
-- [ ] Encryption in transit and at rest enabled  
-- [ ] DLP policies defined and enforced  
-- [ ] Data access logs monitored  
-- [ ] Sensitive data inventories maintained  
+- [ ] Data classification & labeling in place  
+- [ ] Encryption in transit and at rest  
+- [ ] DLP policies enforced  
+- [ ] Access to sensitive data logged  
+- [ ] Data minimization principles applied  
 
 ---
 
 ## Infrastructure
 
-- [ ] Baseline security configurations enforced (CIS, NIST)  
-- [ ] Logging enabled for all services  
-- [ ] Vulnerability scans regularly conducted  
-- [ ] Infrastructure drift monitored and remediated  
-- [ ] Access to production workloads fully controlled  
+- [ ] CIS/NIST baselines for cloud resources  
+- [ ] Logging enabled for all cloud services  
+- [ ] Vulnerability management program active  
+- [ ] Infrastructure drift detection  
+- [ ] Production access restricted & monitored  
+- [ ] Secrets management (no plaintext credentials)  
 
 ---
 
 ## Monitoring & Response
 
-- [ ] SIEM connected to all critical logs  
-- [ ] Alerts defined for identity anomalies  
+- [ ] SIEM integrated with identity, endpoint, and cloud logs  
+- [ ] Alerts for anomalous sign-ins and privileged activity  
 - [ ] Incident response playbooks maintained  
 - [ ] Threat intelligence integrated  
 - [ ] Regular tabletop exercises conducted  
@@ -79,13 +84,50 @@ This is a practical, working checklist used to assess or design a Zero Trust–a
 
 ## Governance & Policy
 
-- [ ] Policies defined for each Zero Trust pillar  
-- [ ] Defined process for exception handling  
-- [ ] Audit trail and documentation maintained  
-- [ ] Regular risk assessments performed  
-- [ ] Configuration standards reviewed quarterly  
+- [ ] Zero Trust policies published and approved  
+- [ ] Exception process defined  
+- [ ] Quarterly control reviews  
+- [ ] Risk register used to track Zero Trust gaps  
+- [ ] Cloud baselines documented  
+
+---
+
+## Maturity Model (Crawl → Walk → Run)
+
+### **Crawl**
+- MFA everywhere  
+- Logging enabled  
+- Basic identity cleanup  
+- First segmentation policies  
+
+### **Walk**
+- Conditional Access  
+- PIM/JIT  
+- Endpoint compliance  
+- DLP  
+- SIEM with real alerts  
+
+### **Run**
+- Continuous Access Evaluation  
+- Automated remediation (SOAR)  
+- Full identity governance  
+- Advanced segmentation  
+- Data access governance at scale  
+
+---
+
+## How to Use This Checklist
+
+Teams typically add:
+- Status (Not Started / In Progress / Complete)  
+- Owner (Security, IAM, Cloud Ops)  
+- Notes / Risks / Dependencies  
+
+This document can feed a formal **Zero Trust roadmap**.
 
 ---
 
 ## Summary
-This checklist supports Zero Trust maturity assessments and guides architecture decisions across identity, security, and cloud operations.
+
+This checklist supports Zero Trust assessments and guides real-world security architecture decisions across cloud identity, access, devices, and governance.
+
