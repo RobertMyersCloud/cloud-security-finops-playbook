@@ -1,30 +1,41 @@
-# Glossary (Cloud + Security + FinOps)
+# Glossary (Cloud, Security, FinOps, Governance)
 
-A simple glossary of terms I use and study regularly.
+A working glossary of the terms I rely on in cloud, security, and FinOps.
 
-## Cloud
-- **Region** – geographic location of cloud data centers.
-- **Availability Zone (AZ)** – isolated data center inside a region.
-- **Serverless** – cloud services that run code without managing servers.
-- **Object Storage** – storage for unstructured data (S3, Blob).
-- **Virtual Network (VNet/VPC)** – cloud private network.
+---
 
-## Security
-- **Zero Trust** – “never trust, always verify.” Identity at the center.
-- **IAM** – identity and access management.
-- **RBAC** – role-based access control.
-- **SCP** – service control policy (AWS).
-- **Conditional Access** – dynamic identity controls based on risk.
+## Cloud Terms
+**Region** – Geographic area where cloud data centers exist.  
+**Availability Zone (AZ)** – Isolated datacenter inside a region.  
+**VPC / VNet** – A private cloud network.  
+**Serverless** – Cloud compute without server management.  
+**Object Storage** – Storage for unstructured data (S3, Blob).  
 
-## FinOps
-- **Allocation** – assigning cloud spend to owners, apps, or cost centers.
-- **Tagging** – labels used to track resources and costs.
-- **Rightsizing** – adjusting resource size to match usage.
-- **Reserved Instances / Savings Plans** – discounts for predictable usage.
-- **Unit Economics** – cost per transaction, customer, or workload.
+---
 
-## Governance
-- **Guardrail** – rule or policy that prevents risky cloud behavior.
-- **Compliance** – meeting standards (CIS, NIST, ISO).
-- **Risk Register** – list of risks, likelihood, and mitigation.
-- **Baseline** – minimum required security configuration.
+## Security Terms
+**Zero Trust** – “Never trust, always verify.” Identity at the center.  
+**IAM** – Identity and Access Management.  
+**RBAC** – Role-based access control.  
+**SCP (AWS)** – Policies applied at the organizational level.  
+**Conditional Access** – Risk-based access policies.  
+**CIS Benchmark** – Security best practices standards.  
+
+---
+
+## FinOps Terms
+**Allocation** – Mapping cloud costs to teams/apps.  
+**Tagging** – Labels used to track cloud spend.  
+**Rightsizing** – Adjusting resource size to match real usage.  
+**RI / Savings Plan** – Discounts for committed usage.  
+**Unit Economics** – Cost per user, transaction, or workload.  
+**Showback/Chargeback** – Sharing or billing cloud costs.  
+
+---
+
+## Governance Terms
+**Guardrail** – A security or cost rule that prevents misconfigurations.  
+**Baseline** – Minimum required configuration for compliance.  
+**Risk Register** – Document of risks, likelihood, and mitigation steps.  
+**Compliance** – Alignment with standards (NIST, CIS, ISO, FedRAMP).  
+**Audit Trail** – Evidence proving compliance or actions.  
