@@ -1,0 +1,48 @@
+# AWS Auto-Remediation Bot (S3 Public Access)
+
+This project automatically detects when an Amazon S3 bucket becomes public and instantly remediates it by enforcing **Block Public Access**. It demonstrates real-world cloud security automation, Zero Trust enforcement, and continuous compliance.
+
+---
+
+## 🔥 Why This Project Matters
+
+Public S3 buckets are one of the **top cloud security risks**.  
+This bot solves that by:
+
+- Monitoring all S3 permission changes  
+- Detecting public exposure in real time  
+- Auto-locking it down  
+- Logging every action  
+
+This is exactly how modern cloud security teams automate guardrails at scale.
+
+---
+
+## 🧱 Services Used
+
+| Service | Role |
+|--------|------|
+| **CloudTrail** | Captures S3 API activity (ACL/policy changes) |
+| **EventBridge** | Routes those security events |
+| **Lambda** | Remediates insecure buckets |
+| **IAM** | Least-privilege execution role |
+| **CloudWatch Logs** | Tracks all remediation actions |
+
+---
+
+## 🏗 Architecture Diagram
+
+```text
+              CloudTrail
+                  |
+                  v
+            EventBridge Rule
+                  |
+                  v
+         Lambda Auto-Remediator
+                  |
+                  v
+     Apply Block Public Access to S3 Bucket
+                  |
+                  v
+         CloudWatch Logging (Audit)
