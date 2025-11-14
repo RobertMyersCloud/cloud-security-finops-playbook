@@ -1,9 +1,0 @@
-{
-  "detail": {
-    "eventSource": "s3.amazonaws.com",
-    "eventName": "PutBucketAcl",
-    "requestParameters": {
-      "bucketName": "example-bucket"
-    }
-  }
-}
