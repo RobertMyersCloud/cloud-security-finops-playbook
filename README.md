@@ -1,135 +1,169 @@
 # Cloud Security + FinOps Playbook
-My personal operating manual for cloud security, Zero Trust, IAM, governance, and cost optimization.
 
-I’m a Navy veteran, MBA, and cloud/security learner building a career at the intersection of:
+My personal operating manual for cloud security, Zero Trust, IAM, governance, automation, and cost optimization.
 
-- Cloud Security
-- Zero Trust & Identity
-- FinOps & Cloud Cost Governance
-- Analytics (Power BI)
-- Cloud Operations & Governance
+I am a Navy veteran, MBA, and cloud/security learner building a career at the intersection of:
 
-This repo is my working playbook — everything I’m learning, documenting, and applying as I transition into Cloud Security + FinOps.
+- Cloud Security  
+- Zero Trust and Identity Governance  
+- FinOps and Cloud Cost Management  
+- Analytics (Power BI)  
+- Cloud Operations and Governance  
+
+This repo is my working playbook — everything I am learning, documenting, and applying as I transition into Cloud Security, IAM, and FinOps.
 
 It includes:
 
-- Practical checklists
-- Architecture notes
-- IAM examples
-- FinOps principles & KPIs
-- Cost optimization frameworks
-- Governance templates
-- Hands-on lab guides
-- Power BI cloud cost analysis
+- Practical checklists and reference guides  
+- Architecture notes and patterns  
+- IAM and identity governance examples  
+- FinOps principles, KPIs, and unit economics  
+- Cloud cost optimization frameworks  
+- Governance and policy-as-code templates  
+- Incident response and automation playbooks  
+- Hands-on lab guides  
+- Power BI and analytics concepts  
 
-This is the blueprint of how I think, how I learn, and how I operate.
+This is the blueprint for how I think, learn, and operate in cloud.
 
 ---
 
 ## Why This Exists
 
-I’m building a long-term cloud career using a simple mindset:
+I am building a long-term cloud career with one mindset:
 
 Small steps. Long vision.
 
-This repo serves three goals:
+This playbook serves three goals:
 
-1. Replace my supply chain past with a Cloud + Security identity.
-2. Create real, visible artifacts for recruiters and hiring managers.
+1. Replace my supply chain past with a Cloud + Security identity.  
+2. Create real, visible artifacts for recruiters and hiring managers.  
 3. Build a portfolio I can grow throughout my cloud career.
 
 ---
 
-## What's Inside
+## What’s Inside
 
 ### 0. Foundations
-- Cloud career pivot story
-- Cloud/security/FinOps glossary
-- Tools & platforms
-- How my Navy + MBA + supply chain experience maps to cloud governance
+- Cloud career pivot story  
+- Cloud / security / FinOps glossary  
+- Tools and platforms  
+- How my Navy, MBA, and operations background map to cloud governance and FinOps  
 
 ### 1. Zero Trust
-- Zero Trust fundamentals
-- Checklists
-- Architecture diagrams (coming soon)
+- Zero Trust fundamentals  
+- Identity-first security mindset  
+- Checklists and patterns  
+- Zero Trust identity and network flows  
 
 ### 2. FinOps
-- Core principles
-- Maturity model
-- KPIs
-- Dashboards (Power BI / Cost Explorer)
+- Core FinOps principles  
+- Maturity model  
+- KPIs and unit economics  
+- Allocation and tagging strategy  
+- Dashboards and reporting concepts  
 
 ### 3. Cloud Cost Optimization
-- Universal optimization playbook
-- AWS examples
-- Azure cost governance examples
-- Tagging strategy
-- Anomaly detection patterns
+- Universal optimization playbook  
+- AWS and Azure examples  
+- Rightsizing and scheduling strategies  
+- Tagging enforcement and anomaly detection patterns  
 
-### 4. IAM & Security
-- IAM fundamentals
-- AWS IAM & SCP examples
-- Azure RBAC
-- Security baselines
-- Incident response templates
+### 4. IAM and Security
+- IAM fundamentals  
+- AWS IAM, SCP, and role examples  
+- Azure Entra ID and RBAC  
+- Least privilege patterns  
+- Security baselines and hardening checklists  
 
 ### 5. Cloud Governance
-- Governance framework
-- Policy + guardrail examples
-- Compliance mapping
-- Risk register templates
+- Governance frameworks and guardrails  
+- Policy-as-code examples (AWS Config, Azure Policy, SCPs)  
+- Compliance and risk mapping  
+- Risk register and exception handling patterns  
 
-### 6. Analytics (Power BI)
-- Cloud cost dashboards
-- Rightsizing visuals
-- Trend analysis workflows
+### 6. Analytics (Power BI and Reporting)
+- Cloud cost dashboard concepts  
+- Rightsizing and utilization visuals  
+- Trend and anomaly analysis workflows  
 
-### 7. DevOps Foundations
-- CI/CD basics
-- Git branching
-- Infrastructure-as-Code basics
+### 7. DevOps and IaC Foundations
+- CI/CD basics  
+- Git branching and workflow  
+- Infrastructure-as-code concepts (Terraform/Bicep)  
 
 ### 8. Labs (Hands-On Projects)
-- AWS IAM hardening
-- Azure identity labs
-- FinOps dashboard lab
-- Cloud cost investigation scenarios
+- AWS IAM hardening labs  
+- Azure identity and Conditional Access labs  
+- Cost investigation and FinOps labs  
+- Incident response simulations  
 
-### 9. Certifications & Learning
-- Current certifications
-- Micro-badges
-- Next cert roadmap
+### 9. Certifications and Learning
+- Current certifications and micro-badges  
+- In-progress certifications  
+- ROI-based certification roadmap  
+
+### 10. Security+ (SY0-701)
+- Domain notes  
+- Cheat sheets  
+- Cloud-mapped Security+ concepts  
+- Study plan  
+
+### 11. Incident Response
+- Cloud IR lifecycle  
+- AWS and Azure incident playbooks  
+- Detection, containment, eradication, and recovery patterns  
+- Threat intelligence basics and labs  
+
+### 12. Multi-Cloud Architecture
+- AWS, Azure, and GCP service comparisons  
+- Identity, networking, logging, and security mappings  
+- Multi-cloud patterns and best practices  
+
+### 13. Architecture Patterns
+- Zero Trust architecture  
+- Three-tier, microservices, and serverless patterns  
+- Landing zone and governance architectures  
+- FinOps-aware and IAM reference architectures  
+
+### 14. Automation Playbooks
+- Security automation  
+- IAM lifecycle automation  
+- Governance and tagging automation  
+- Cost automation and cleanup workflows  
+- Policy-as-code and remediation patterns  
+
+### 15. ITIL and Cloud Operations
+- Incident, change, and problem management  
+- Configuration and asset management in cloud  
+- Service catalog and approved cloud services  
+- Service continuity, DR, and operational maturity  
 
 ---
 
 ## My Direction
 
-I’m building toward roles in:
+I am building toward roles in:
 
-- Cloud Security Analyst
-- FinOps Analyst / Cloud Cost Analyst
-- Cloud Governance / Cloud Operations
-- Identity & Access Management (IAM)
+- Cloud Security Analyst  
+- IAM Engineer / Identity Governance  
+- FinOps / Cloud Cost Analyst  
+- Cloud Governance / Cloud Operations  
 
-My background in leadership, operations, finance, and the military becomes a force multiplier in cloud:
+My background in leadership, operations, finance, and the military supports:
 
-- discipline
-- accountability
-- risk assessment
-- defense-in-depth
-- structured decision-making
+- Discipline and accountability  
+- Risk assessment and defense-in-depth thinking  
+- Structured decision-making  
+- Long-term, systems-based thinking  
 
----
+This repo is a living document. I update it as I:
 
-## This Repo Is a Living Document
-I update this as I:
-
-- Learn new cloud concepts
-- Complete labs
-- Earn certifications
-- Build dashboards
-- Practice Zero Trust / security thinking
-
-Follow along — this is just the beginning.
+- Learn new cloud concepts  
+- Complete labs  
+- Earn certifications  
+- Build dashboards and automations  
+- Practice Zero Trust and security thinking  
 
 Small steps. Long vision.
+
